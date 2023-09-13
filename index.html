@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Gerardor de Assinaturas para E-mail</title>
+	</head>
+	<body>
+		<div class="parent">
+            <div class="div1">
+                <div class="wrapper">
+                    <h1>Gerador de Assinaturas para E-mail</h1>
+                    <form id="signatureForm">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Digite o Nome" required>
+                        <input class="form-control" type="text" id="title" name="title" placeholder="Digite Cargo" required>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Digite o Email" required>
+                        <input class="form-control" type="text" id="phone" name="phone" placeholder="Digite o Telefone/Ramal" required>
+                        <input class="form-control" type="file" id="logo" name="logo" accept=".svg"  required>
+                        <button type="submit">Gerar Assinatura</button>
+                    </form>
+                </div>
+            </div>
+            <div id="myModal" class="modal" >
+                <div class="modal-content">
+                    <h1>Sua assinatura esta aqui!</h1>
+                    <!-- Conteúdo do modal -->
+                    <span class="close">&times;</span>
+                    <div id="modalContent" style="border-style: line;"></div>
+
+                    <button type="button">Copiar código</button>
+                </div>
+            </div>
+		</div>
+        <script src="script.js"></script>
+	</body>
+</html>
